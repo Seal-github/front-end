@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style样式绑定</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 数组语法 -->
+        <div v-bind:style="{border:borderStyle,width:widthStyle,
+            height:heightStyle}">测试1</div>
+        <div v-bind:style="objStyle">测试2</div>
+        <button v-on:click='fun'>切换</button>
+    </div>
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <script>
+        let vm = new Vue({
+            el:'#app',
+            data:{
+                borderStyle:'1px solid red',
+                widthStyle:'100px',
+                heightStyle:'200px',
+                objStyle:{
+                    border:'1px solid blue',
+                    width:'200px',
+                    height:'100px',
+                }
+            },
+            methods:{
+                fun:function(){
+                    this.heightStyle = '100px';
+                    this.objStyle.width = '100px';
+                }
+            }
+        })
+    </script>
+</body>
+</html>

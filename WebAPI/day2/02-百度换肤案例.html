@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            list-style: none;
+        }
+        body {
+            background:url("images/spring.jpg") no-repeat center top;
+            background-size: cover;
+        }
+        .baidu {
+            overflow: hidden;
+            width: 420px;
+            height: 80px;
+            margin: 50px auto;
+            background-color: #ccc;
+        }
+        .baidu li {
+            display: inline-block;
+            margin: 5px auto;
+        }
+        .baidu img{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+        <ul class="baidu">
+            <li><img src="images/spring.jpg" alt=""></li>
+            <li><img src="images/summer.jpg" alt=""></li>
+            <li><img src="images/autumn.jpg" alt=""></li>
+            <li><img src="images/winer.jpg" alt=""></li>
+        </ul>
+        <script>
+            var imgs = document.getElementsByTagName('img');
+            for(var i = 0;i<imgs.length;i++)
+            {
+                imgs[i].onclick = function(){
+                    // this.src就是我们点击图片的路径
+                    document.body.style.backgroundImage = 'url('+this.src+')';
+                }
+            }
+        </script>
+</body>
+</html>

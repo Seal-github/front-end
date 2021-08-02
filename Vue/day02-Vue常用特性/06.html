@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div>
+            <span>firstName:</span>
+            <span>
+                <input type="text" name="" id="" v-model='firstName'>
+            </span>
+        </div>
+        <div>
+            <span>lastName:</span>
+            <span>
+                <input type="text" name="" id="" v-model='lastName'>
+            </span>
+        </div>
+        <div>{{fullName}}</div>
+    </div>
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <script>
+        let vm = new Vue({
+            el:'#app',
+            data: {
+                firstName: 'Foo',
+                lastName: 'Bar',
+                // fullName: 'Foo Bar'
+            },
+            // 使用计算属性
+            computed:{
+                fullName:function(){
+                    return this.firstName +' '+this.lastName
+                }
+            },
+            // 使用侦听器
+            // 当需要在数据变化时执行异步或开销较大的操作时适应侦听器 
+            watch: {
+                // firstName: function (val) {
+                //     // val表示变化之后的值
+                //     this.fullName = val + ' ' + this.lastName
+                // },
+                // lastName: function (val) {
+                //     this.fullName = this.firstName + ' ' + val
+                // }
+            }
+        })
+    </script>
+</body>
+</html>

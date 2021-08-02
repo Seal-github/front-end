@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes move {
+            0% {
+                transform: translate(0px,0px);
+            }
+            25% {
+                transform: translate(1200px,0px);
+            }
+            50% {
+                transform: translate(1200px,500px);
+            }
+            100% {
+                transform: translate(0px,500px);
+            }
+            /* 100% {
+                transform: translate(0px,0px);
+            } */
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 动画名 */
+            /* animation-name: move; */
+            /* 速度曲线 */
+            /* animation-timing-function: ease; */
+            /* 动画时间 */
+            /* animation-duration: 5s; */
+            /* 动画播放次数 */
+            /* animation-iteration-count: infinite; */
+            /* 动画播放方向 */
+            /* animation-direction: alternate; */
+            /* animation-fill-mode: forwards; */
+            /* animation:name duration timing-function delay iteration-count direction fill-mode */
+            animation: move 5s linear 1s 4 alternate backwards;
+            /* 前两个属性一定要写 */
+        }
+        div:hover {
+            /* 鼠标放上停止 */
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* nth-child()会把所有孩子排序号 */
+        /* 会先看nth-child(1),再看div，结果不执行 */
+        section div:nth-child(1) {
+            background-color: turquoise;
+        }
+        /* nth-of-type()会把指定元素的孩子排序 */
+        /* 会先看div，再看nth-of-type(1) */
+        section div:nth-of-type(1) {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p>光头强</p>
+        <div>熊大</div>
+        <div>熊二</div>
+    </section>
+</body>
+</html>

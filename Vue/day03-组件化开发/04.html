@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 每一个组件相互的数据都是独立的 -->
+        <component-a></component-a>
+        <component-b></component-b>
+        <component-c></component-c>
+        <component-y></component-y>
+    </div>
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <script>
+        Vue.config.devtools = true;
+        // 局部组成注册
+8
+        // 局部组件只能在定义它的父组件中使用
+        // 如果你希望 ComponentX 在 ComponentY 中可用，则你需要这样写  
+        // 1.定义ComponentX组件
+        var ComponentX = { 
+            data:function(){
+                return {msg:'X'}
+
+            }, 
+            template:'<div>{{msg}}</div>'
+        }
+        // 2.然后在 ComponentY的components 选项中用component-x注册ComponentX组件
+        // 3.在template中使用<component-x></component-x>
+        // 4.在 components 选项中用component-y注册ComponentY组件
+        // 5.使用<component-y></component-y>
+        var ComponentY = {
+                components: {
+                    'component-x': ComponentX
+                    },
+                template:'<component-x></component-x>'
+            } 
+
+
+        // 你可以通过一个普通的 JavaScript 对象来定义组件
+        var ComponentA = {
+            data:function(){
+            return {msg:'HelloWorld1'}
+
+            },
+            template:'<div>{{msg}}</div>'
+        }
+        var ComponentB = {data:function(){
+            return {msg:'HelloWorld2'}
+            },
+            template:'<div>{{msg}}</div>'
+        }
+        var ComponentC = {data:function(){
+            return {msg:'HelloWorld3'}
+            },
+            template:'<div>{{msg}}</div>'
+        }
+        let vm =  new Vue({
+            el:'#app',
+            data:{
+
+            },
+            // 然后在 components 选项中定义你想要使用的组件
+            components: {
+                'component-a': ComponentA,
+                'component-b': ComponentB,
+                'component-c':ComponentC,
+                'component-y':ComponentY
+            }
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Father(name,age){
+            this.name = name;
+            this.age = age;
+        }
+        Father.prototype.money =function(){
+            console.log(10000);
+        }
+        function Son(name,age){
+            // 要利用call()把Father的this改为Son的this
+            // 属性继承
+            Father.call(this,name,age);
+        }
+        // 方法继承
+        Son.prototype = new Father();
+        Son.prototype.constructor = Son;
+        Son.prototype.exam =function(){
+            console.log("考试");
+        }
+        var son = new Son('刘德华',19);
+        console.log(son);
+        console.log(Father.prototype);
+    </script>
+</body>
+</html>

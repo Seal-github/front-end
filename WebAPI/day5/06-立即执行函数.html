@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 不用调用，立即执行
+        // 写法1
+        (function(a){
+        console.log(a);
+    })(1);
+    // 写法2
+    (function sum(a,b){
+        console.log(a+b);
+    }(1,2));
+    // 立即执行函数最大的好处是独立创建了一个作用域，里面所有变量都是局部变量，没有冲突
+    </script>
+</body>
+</html>

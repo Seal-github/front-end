@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div v-if = 'score>90'>优秀</div>
+        <div v-else-if = 'score<=90&&score>80'>良好</div>
+        <div v-else-if = 'score<=80&&score>60'>中</div>
+        <div v-else>差</div>
+        <!-- v-if元素是否渲染到页面 -->
+        <!-- v-show控制元素样式是否显示，display:none/block ，元素已经渲染到页面了-->
+        <div v-show='flag'>测试v-show</div>
+        <button v-on:click='fun'>点击</button>
+    </div>
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <script>
+        let vm = new Vue({
+            el:'#app',
+            data:{
+                score:97,
+                flag:false
+            },
+            methods:{
+                fun:function(){
+                    this.flag=!this.flag;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img {
+        position:absolute;
+    }
+</style>
+<body>
+    <img src="images/😀.jpg" alt="">
+    <script>
+        var pic = document.querySelector('img');
+        document.addEventListener('mousemove',function(e){
+            console.log(e.pageX,e.pageY);
+            // 注意要加px
+            pic.style.left = e.pageX + 'px';
+            pic.style.top = e.pageY + 'px';
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .preview {
+        position: relative;
+        margin-left: 100px;
+        border: 1px solid black;
+        height: 350px;
+        width: 350px;
+    }
+    .mask {
+        display: none;
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        background-color: rgb(233, 235, 154);
+        opacity: 0.5;
+    }
+    .big {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 400px;
+        height: 500px;
+        width: 500px;
+        overflow: hidden;
+        background-color: pink;
+    }
+</style>
+<script>
+    window.addEventListener('load',function(){
+        var preview = document.querySelector('.preview');
+        var mask = document.querySelector('.mask');
+        var big = document.querySelector('.big');
+        preview.addEventListener('mousemove',function(e){
+            // 显示
+            mask.style.display = 'block';
+            big.style.display = 'block';
+            // mask移动
+            var x= e.pageX - this.offsetLeft;
+            var y = e.pageY - this.offsetTop;
+            var masky= y-mask.offsetTop/2;
+            var maskx = x-mask.offsetLeft/2;
+            if(maskx<0){
+                maskx=0;
+            }
+            if(maskx>preview.offsetWidth-mask.offsetWidth){
+                maskx =preview.offsetWidth-mask.offsetWidth;
+            }
+            if(masky>preview.offsetHeight-mask.offsetHeight){
+                masky =preview.offsetHeight-mask.offsetHeight;
+            }
+            if(masky<0){
+                masky=0;
+            }
+            mask.style.top = masky+'px';
+            mask.style.left = maskx+'px';
+        })
+        preview.addEventListener('mouseout',function(){
+            mask.style.display = 'none';
+            big.style.display = 'none';
+        })
+    })
+</script>
+<body>
+    <div class="preview">
+        <img src="images/i.jpg" alt="">
+        <div class="mask"></div>
+        <div class="big">
+            <img src="images/iphone.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

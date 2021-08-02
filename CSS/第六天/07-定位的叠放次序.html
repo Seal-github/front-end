@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 0;
+            left: 20px;
+        }
+        .one {
+            background-color:darkgray;
+            z-index: 4;
+        }
+        .two {
+            background-color: coral;
+            top: 50px;
+            left: 50px;
+            z-index: 2;
+        }
+        .three {
+            background-color: cornflowerblue;
+            top: 100px;
+            left: 100px;
+            z-index: 3;
+        }
+        /* 如果属性值相同，则按照书写顺序，后来居上 */
+    </style>
+</head>
+<body>
+    <div class="box one">1</div>
+    <div class="box two">2</div>
+    <div class="box three">3</div>
+</body>
+</html>

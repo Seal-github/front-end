@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 200px;
+            width: 250px;
+            background-color: pink;
+        }
+        div::before {
+            /* content是必须的 */
+            /* 都是行内元素 */
+            float: left;
+            content: '我';
+            height: 50px;
+            width: 70px;
+            background-color: rosybrown;
+        }
+        div::after {
+            content: '郑鸿';
+        }
+    </style>
+</head>
+<body>
+    <div>
+        是
+    </div>
+</body>
+</html>

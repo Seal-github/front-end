@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 偶数的孩子 */
+        ul li:nth-child(even) {
+            background-color: pink;
+        }
+        /* 奇数的孩子 */
+        ul li:nth-child(odd) {
+            background-color: skyblue;
+        }
+        /* 循环累计,只能用字母n */
+        /* ol li:nth-child(n) {
+            background-color: tomato;
+        } */
+        /* 2n */
+        ol li:nth-child(2n) {
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+    </ul>
+    <ol>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+    </ol>
+</body>
+</html>

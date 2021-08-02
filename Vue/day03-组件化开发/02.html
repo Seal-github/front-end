@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 每一个组件相互的数据都是独立的 -->
+        <button-counter></button-counter>
+        <button-counter></button-counter>
+        <button-counter></button-counter>
+    </div>
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <script>
+        // 组件注册
+        // Vue.component('button-counter',{
+        //     //data必须是一个函数
+        //     data:function(){
+        //         return {
+        //             count:0
+        //         }
+        //     },
+        //     // 组件的模板应该确切的包含一个根元素
+        //     template:'<div><button v-on:click="count++">点击了{{count}}次</button><button>测试</button></div>'
+        // })
+        // -------------------------------------------
+        Vue.component('button-counter',{
+            //data必须是一个函数
+            data:function(){
+                return {
+                    count:0
+                }
+            },
+            // 组件的模板应该确切的包含一个根元素
+            // 可以使用模板字符串
+            template:`
+            <div>
+                <button v-on:click="count++">点击了{{count}}次</button>
+                <button>测试</button>
+            </div>
+            `
+        })
+        let vm =  new Vue({
+            el:'#app',
+            data:{
+
+            }
+        })
+    </script>
+</body>
+</html>

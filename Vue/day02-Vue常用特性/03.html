@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-color='msg'>
+    </div>
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <script>
+        // 带参数自定义指令：改变背景色
+        Vue.directive('color',{
+            // 钩子函数
+            // binding一个对象，
+            // el指令所绑定的元素，可以用来直接操作 DOM
+            bind:function(el,binding){
+                el.style.backgroundColor = binding.value.color;
+            }
+        })
+        let vm = new Vue({
+            el:'#app',
+            data:{
+                msg:{
+                    color:'orange'
+                }
+            },
+            methods:{
+
+            }
+        })
+    </script>
+</body>
+</html>

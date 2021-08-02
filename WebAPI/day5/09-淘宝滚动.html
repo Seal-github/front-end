@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .w {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .header {
+        background-color: pink;
+        height: 400px;
+    }
+    .banner {
+        background-color: #ccc;
+        height: 600px;
+    }
+    .main {
+        background-color: skyblue;
+        height: 500px;
+    }
+    .goback {
+        position: absolute;
+        display: none;
+    }
+    .bar {
+        position: absolute;
+        background-color: pink;
+        height: 100px;
+        width: 80px;
+        top: 800px;
+        right: 0;
+    }
+</style>
+<body>
+    <div class="bar">
+        <span class="goback">
+            返回
+        </span>
+    </div>
+    <div class="header w">头部</div>
+    <div class="banner w"></div>
+    <div class="main w">主体</div>
+    <script>
+        var bar = document.querySelector('.bar');
+        document.addEventListener('scroll',function(){
+            if(window.pageYOffset>=400){
+                bar.style.position = 'fixed';
+            }
+            else{
+                bar.style.position = 'absolute';
+            }
+        })
+    </script>
+</body>
+</html>

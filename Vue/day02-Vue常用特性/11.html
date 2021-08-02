@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 变更方法 -->
+    <!-- push(),pop(),shift(),unshift(),splice(),sort(),reverse() -->
+    <!-- 替换数组 -->
+    <!-- filter()、concat() 和 slice() -->
+    <div id="app">
+        <div>
+            <div>
+                <input type="text" v-model='fname'>
+                <button v-on:click='add'>添加</button>
+                <button v-on:click='del'>删除</button>
+            </div>
+            <ul>
+                <!-- 遍历数组 -->
+                <li v-for='(items,i) in fruits'>{{items+'----'+i}}</li>
+
+            </ul>
+        </div>
+    </div>
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <script>
+        let vm = new Vue({
+            el:'#app',
+            data:{
+                fname:'',
+                fruits:['apple','banana','pear'],
+            },
+            methods:{
+                add:function(){
+                    this.fruits.push(this.fname);
+                },
+                del:function(){
+                    this.fruits.pop();
+                }
+            }
+        })
+    </script>
+</body>
+</html>

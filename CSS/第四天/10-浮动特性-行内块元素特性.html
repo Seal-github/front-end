@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span ,
+        div {
+            height: 300px;
+            width: 300px;
+            background-color: pink;
+            float: left;
+        }
+        p {
+            /* 如果块级盒子没有设置宽度，默认宽度和父级一样宽，但是添加浮动后，
+            它的大小根据内容来决定 */
+            height: 200px;
+            background-color: purple;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <span>1</span>
+    <span>2</span>
+    <div>div</div>
+    <p>ppppp</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 传统盒子模型 */
+        div:nth-child(1){
+            height: 200px;
+            width: 200px;
+            padding: 10px;
+            border: 20px solid red;
+        }
+        /* CSS3盒子模型 */
+        /* padding 和border不会撑大盒子了 */
+        div:nth-child(2){
+            /* 加上这句，就变成了CSS3的盒子模型 */
+            box-sizing: border-box;
+            height: 200px;
+            width: 200px;
+            padding: 10px;
+            border: 20px solid bisque;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+</body>
+</html>

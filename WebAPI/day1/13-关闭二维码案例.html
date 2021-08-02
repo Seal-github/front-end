@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+        }
+        .box {
+            position: relative;
+            width: 300px;
+            height: 271px;
+            /* border: 1px solid red; */
+            margin: 50px auto;
+        }
+        #X {
+            position: absolute;
+            width: 30px;
+            top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="images/tao.jpg" alt="" id="tao">
+        <img src="images/X.jpg" alt="" id="X">
+    </div>
+    <script>
+        var box = document.querySelector('.box');
+        var x = document.querySelector('#X');
+        x.onclick =function(){
+            box.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

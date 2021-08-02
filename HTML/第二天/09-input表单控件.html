@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        用户名字：<input type="text" name="username" value="请输入用户名"><br>
+        密码：<input type="password" name="password" maxlength="10"><br>
+        <!-- 这里性别必须有相同的name才可以实现多选一 -->
+        <!-- 单选框和复选框要有相同的name -->
+        <!-- value方便后台提取数据 -->
+        <!-- checked规定此input元素首次加载时应当被选中 -->
+        <!-- maxlength输入字段中字符的最大长度 -->
+        性别：男<input type="radio" name="sex" value="男">
+                女<input type="radio" name="sex" value="女"><br>
+        爱好：吃饭<input type="checkbox" name="hobby" value="吃饭">
+                睡觉<input type="checkbox" name="hobby" value="睡觉">
+                学编程<input type="checkbox" name="hobby" value="学编程"><br>
+        <!-- submit把form表单元素值提交给后台 -->
+        <input type="submit">
+        <input type="reset"><br>
+        <input type="button" value="获取短信验证码"><br>
+        上传头像：<input type="file">
+    </form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>but</button>
+    <div>div</div>
+    <span>span</span>
+    <ul>
+        <li>一个li</li>
+        <li>一个li</li>
+        <li>一个li</li>
+        <li>一个li</li>
+        <li>一个li</li>
+    </ul>
+    <ol>
+        <li>别的li</li>
+        <li>别的li</li>
+        <li>别的li</li>
+        <li>别的li</li>
+        <li>别的li</li>
+    </ol>
+    <div class="demo">
+        <div class="box">
+            <span class="erweima">
+
+            </span>
+        </div>
+    </div>
+    <ul class="create">
+
+    </ul>
+    <script>
+        // 1.父节点parentNode
+        // 得到的是离得最近的父节点
+        var erweima = document.querySelector('.erweima');
+        console.log(erweima.parentNode);
+        // 2.子节点childNode
+        // 包含元素节点，文本节点等等，会包含不需要的，所以不常用
+        // 因此有了children
+        var ul = document.querySelector('ul');
+        console.log(ul.childNodes);
+        console.log(ul.children);
+        // 获取子节点第一和最后
+        // 会出现childNode一样的问题，会获取不需要的文本节点
+        var ol = document.querySelector('ol');
+        console.log(ol.firstChild);
+        console.log(ol.lastChild);
+        // 所以有了
+        console.log(ol.firstElementChild);
+        console.log(ol.lastElementChild);
+        // 3.兄弟节点
+        var div = document.querySelector('div');
+        // 会获取不需要的文本节点
+        console.log(div.nextSibling);
+        console.log(div.previousSibling);
+        // 所以有了
+        console.log(div.nextElementSibling);
+        console.log(div.previousElementSibling);
+        // 4.创建节点
+        var li = document.createElement('li');
+        // 5.添加节点
+        var create = document.querySelector('.create');
+        create.appendChild(li);
+    </script>
+</body>
+</html>

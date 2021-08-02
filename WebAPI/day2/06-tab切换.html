@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        list-style: none;
+        padding: 0;
+    }
+    .tab_list {
+        height:40px ;
+        width: 250px;
+        background-color: #cccc;
+    }
+    .tab_list li {
+        float: left;
+        height: 39px;
+        line-height: 39px;
+        padding: 0 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .tab_list .current {
+        background-color: #c81623;
+        color: #fff;
+    }
+    .item_info {
+        padding: 20px 0 0 20px;
+    }
+    .item {
+        display: none;
+        float: left;
+    }
+</style>
+<body>
+    <div class="tab">
+        <div class="tab_list">
+            <ul>
+                <li  class="current">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </div>
+        <div class="tab_con">
+            <div class="item" style="display: block;">55555555555</div>
+            <div class="item">1111111111</div>
+            <div class="item">22222222222</div>
+            <div class="item">33333333</div>
+            <div class="item">444444444</div>
+        </div>
+    </div>
+    <script>
+        var tab_list = document.querySelector('.tab_list');
+        var lis = tab_list.querySelectorAll('li');
+        var items = document.querySelectorAll('.item');
+        for(var i = 0;i<lis.length;i++)
+        {
+            lis[i].setAttribute('index',i);
+            lis[i].onclick = function(){
+                for(var j=0;j<lis.length;j++)
+                {
+                    lis[j].className = '';
+                }
+                this.className = 'current';
+                var index = this.getAttribute('index');
+                console.log(index);
+                for(var k=0;k<lis.length;k++)
+                {
+                    items[k].style.display = 'none';
+                }
+                items[index].style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

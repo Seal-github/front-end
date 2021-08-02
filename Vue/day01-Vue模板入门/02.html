@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [v-cloak]{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!-- 这个指令可以隐藏未编译的 Mustache 标签直到组件实例准备完毕 -->
+        <div v-cloak>{{msg}}</div>
+    </div>
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <script>
+        let vm = new Vue({
+            el:'#app',
+            data:{
+                msg:'Hello Vue'
+            }
+        })
+    </script>
+</body>
+</html>

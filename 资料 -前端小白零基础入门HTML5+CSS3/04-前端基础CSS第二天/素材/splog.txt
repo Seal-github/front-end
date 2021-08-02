@@ -1,0 +1,344 @@
+[2020-07-25 21:15:19.129] [I] ***************************************************************
+[2020-07-25 21:15:19.129] [I] Snipaste 2.2.1-Beta2 x64 (Desktop) (Qt 5.9.0)
+[2020-07-25 21:15:19.130] [I] OS: Windows 10 (10.0) [10.0.18363]
+[2020-07-25 21:15:19.130] [I] Cores: 12
+[2020-07-25 21:15:19.130] [I] Elevated: false
+[2020-07-25 21:15:19.130] [I] Main thread id: 0x4470
+[2020-07-25 21:15:19.130] [I] Log level: 2
+[2020-07-25 21:15:19.130] [I] Application dir: D:/Myworkplace/前端基础/资料 -前端小白零基础入门HTML5+CSS3/04-前端基础CSS第二天/素材
+[2020-07-25 21:15:19.130] [I] Working dir: D:/Myworkplace/前端基础/资料 -前端小白零基础入门HTML5+CSS3/04-前端基础CSS第二天/素材
+[2020-07-25 21:15:19.130] [I] Config: D:/Myworkplace/前端基础/资料 -前端小白零基础入门HTML5+CSS3/04-前端基础CSS第二天/素材/config.ini
+[2020-07-25 21:15:19.131] [I] Library paths: (D:/Myworkplace/前端基础/资料 -前端小白零基础入门HTML5+CSS3/04-前端基础CSS第二天/素材)
+[2020-07-25 21:15:19.131] [I] Screen scale: 1.25
+[2020-07-25 21:15:19.131] [I] Retina factor: 1
+[2020-07-25 21:15:19.131] [I] Screens: 1
+[2020-07-25 21:15:19.131] [I]     QRect(0, 0, 1920 x 1080), DPI = 119 , DPR = 1
+[2020-07-25 21:15:19.131] [I] About to import settings from: D:/Myworkplace/前端基础/资料 -前端小白零基础入门HTML5+CSS3/04-前端基础CSS第二天/素材/config.ini
+[2020-07-25 21:15:19.133] [I] Settings imported
+[2020-07-25 21:15:19.135] [I] Breakpad initialized
+[2020-07-25 21:15:19.137] [I] Process priority: 1
+[2020-07-25 21:15:19.137] [I] Initializing Snipaste...
+[2020-07-25 21:15:19.662] [I] Prefetch...
+[2020-07-25 21:15:19.663] [I] About to apply settings...
+[2020-07-25 21:15:19.675] [I] Preloaded 20 files: 16 ms
+[2020-07-25 21:15:20.052] [I] Settings applied
+[2020-07-25 21:15:20.105] [I] Log level set to: 2
+[2020-07-25 21:15:20.193] [I] History dir: D:/Myworkplace/前端基础/资料 -前端小白零基础入门HTML5+CSS3/04-前端基础CSS第二天/素材/history
+[2020-07-25 21:15:20.199] [W] Failed to open history file "D:/Myworkplace/前端基础/资料 -前端小白零基础入门HTML5+CSS3/04-前端基础CSS第二天/素材/history/.sp0" for reading
+[2020-07-25 21:15:20.200] [I] Add group
+[2020-07-25 21:15:20.208] [I] Request to switch to group 0
+[2020-07-25 21:15:20.379] [I] About to restore pasters...
+[2020-07-25 21:15:20.383] [I] Group 0 [8X5TZQ]: "默认"
+[2020-07-25 21:15:20.383] [I] Record version: 169
+[2020-07-25 21:15:20.383] [I] To restore: 0
+[2020-07-25 21:15:20.383] [I] Pasters touched
+[2020-07-25 21:15:20.383] [I] All pasters activated: true
+[2020-07-25 21:15:20.439] [I] Unref images: 0 (0 removed)
+[2020-07-25 21:15:20.442] [I] Unref dirs: 0 (0 removed)
+[2020-07-25 21:15:20.450] [I] Empty history info files: 0 (0 removed)
+[2020-07-25 21:15:20.450] [I] Pasters restored
+[2020-07-25 21:15:20.453] [I] Launch time: 1336 ms
+[2020-07-25 21:15:20.707] [I] Load default ssl configuration: 1038 ms
+[2020-07-25 21:16:05.409] [I] Second instance: 1
+[2020-07-25 21:16:07.403] [I] Second instance: 1
+[2020-07-25 21:16:24.600] [I] Silent feed checking finished
+[2020-07-25 21:16:24.600] [I] New version available: 2.4-Beta
+[2020-07-25 21:16:26.213] [I] Parsing command arguments [1]: (sp, snip)
+[2020-07-25 21:16:26.214] [I] Snip request: 0 (dest: 0)
+[2020-07-25 21:16:26.214] [I] Snipper: preparing...
+[2020-07-25 21:16:26.270] [I] Screens: 1
+[2020-07-25 21:16:26.270] [I]     QRect(0, 0, 1920 x 1080), DPI = 119 , DPR = 1
+[2020-07-25 21:16:26.270] [I] Desktop: QRect(0, 0, 1920 x 1080)
+[2020-07-25 21:16:26.270] [I] Background size: QSize(1920, 1080)
+[2020-07-25 21:16:26.284] [I] Focus set
+[2020-07-25 21:16:26.398] [I] Snipper: preparation done (0)
+[2020-07-25 21:16:26.398] [I] Snipper: about to appear...
+[2020-07-25 21:16:26.398] [I] Snipper: prepare to show...
+[2020-07-25 21:16:26.411] [I] Snipper: shown
+[2020-07-25 21:16:26.412] [I] Snipper: focus in
+[2020-07-25 21:16:26.413] [I] Snipper: ready [0.202 s]
+[2020-07-25 21:16:33.288] [I] Snipper: focus out [3]
+[2020-07-25 21:16:34.928] [I] Snipper: focus in
+[2020-07-25 21:16:34.928] [I] Screenshot destination: none
+[2020-07-25 21:16:34.928] [I] Snipper: about to quit...
+[2020-07-25 21:16:34.931] [I] Snipper: focus out [3]
+[2020-07-25 21:16:34.933] [I] Snipper: hidden
+[2020-07-25 21:16:34.934] [I] Snipper: quit
+[2020-07-25 21:22:26.561] [I] Parsing command arguments [1]: (sp, snip)
+[2020-07-25 21:22:26.561] [I] Snip request: 0 (dest: 0)
+[2020-07-25 21:22:26.562] [I] Snipper: preparing...
+[2020-07-25 21:22:26.608] [I] Screens: 1
+[2020-07-25 21:22:26.608] [I]     QRect(0, 0, 1920 x 1080), DPI = 119 , DPR = 1
+[2020-07-25 21:22:26.608] [I] Desktop: QRect(0, 0, 1920 x 1080)
+[2020-07-25 21:22:26.608] [I] Background size: QSize(1920, 1080)
+[2020-07-25 21:22:26.617] [I] Focus set
+[2020-07-25 21:22:26.618] [I] Snipper: preparation done (0)
+[2020-07-25 21:22:26.619] [I] Snipper: about to appear...
+[2020-07-25 21:22:26.619] [I] Snipper: prepare to show...
+[2020-07-25 21:22:26.664] [I] Snipper: shown
+[2020-07-25 21:22:26.665] [I] Snipper: focus in
+[2020-07-25 21:22:26.665] [I] Snipper: ready [0.103 s]
+[2020-07-25 21:22:43.273] [I] Parsing command arguments [1]: (sp, paste)
+[2020-07-25 21:22:43.274] [I] Screenshot destination: pin, 
+[2020-07-25 21:22:43.274] [I] Paste image: QPoint(964, 218)
+[2020-07-25 21:22:43.300] [I] Screenshot successfully saved: pin, 
+[2020-07-25 21:22:43.300] [I] Snipper: about to quit...
+[2020-07-25 21:22:43.331] [I] Snipper: focus out [3]
+[2020-07-25 21:22:43.331] [I] Snipper: hidden
+[2020-07-25 21:22:43.332] [I] Snipper: quit
+[2020-07-25 21:22:43.444] [I] Snipper: scene saved
+[2020-07-25 21:22:59.150] [I] Color copied
+[2020-07-25 21:23:02.242] [I] Color copied
+[2020-07-25 21:23:02.741] [I] Color copied
+[2020-07-25 21:23:02.774] [I] Color copied
+[2020-07-25 21:23:02.807] [I] Color copied
+[2020-07-25 21:23:02.840] [I] Color copied
+[2020-07-25 21:23:02.873] [I] Color copied
+[2020-07-25 21:23:02.906] [I] Color copied
+[2020-07-25 21:23:02.940] [I] Color copied
+[2020-07-25 21:23:02.972] [I] Color copied
+[2020-07-25 21:23:03.006] [I] Color copied
+[2020-07-25 21:23:03.038] [I] Color copied
+[2020-07-25 21:23:03.071] [I] Color copied
+[2020-07-25 21:23:03.105] [I] Color copied
+[2020-07-25 21:23:03.138] [I] Color copied
+[2020-07-25 21:23:03.170] [I] Color copied
+[2020-07-25 21:23:03.204] [I] Color copied
+[2020-07-25 21:23:03.237] [I] Color copied
+[2020-07-25 21:23:03.270] [I] Color copied
+[2020-07-25 21:23:03.302] [I] Color copied
+[2020-07-25 21:23:03.467] [I] Color copied
+[2020-07-25 21:23:03.500] [I] Color copied
+[2020-07-25 21:23:03.533] [I] Color copied
+[2020-07-25 21:23:03.566] [I] Color copied
+[2020-07-25 21:23:03.599] [I] Color copied
+[2020-07-25 21:23:03.632] [I] Color copied
+[2020-07-25 21:23:03.667] [I] Color copied
+[2020-07-25 21:23:03.699] [I] Color copied
+[2020-07-25 21:23:03.732] [I] Color copied
+[2020-07-25 21:23:03.764] [I] Color copied
+[2020-07-25 21:23:03.797] [I] Color copied
+[2020-07-25 21:23:03.830] [I] Color copied
+[2020-07-25 21:23:03.864] [I] Color copied
+[2020-07-25 21:23:03.896] [I] Color copied
+[2020-07-25 21:23:03.929] [I] Color copied
+[2020-07-25 21:23:03.964] [I] Color copied
+[2020-07-25 21:23:03.996] [I] Color copied
+[2020-07-25 21:23:04.028] [I] Color copied
+[2020-07-25 21:25:20.192] [I] Preloaded 20 files: 11 ms [every 10.0 m]
+[2020-07-25 21:27:48.145] [I] Parsing command arguments [1]: (sp, snip)
+[2020-07-25 21:27:48.145] [I] Snip request: 0 (dest: 0)
+[2020-07-25 21:27:48.145] [I] Snipper: preparing...
+[2020-07-25 21:27:48.190] [I] Screens: 1
+[2020-07-25 21:27:48.190] [I]     QRect(0, 0, 1920 x 1080), DPI = 119 , DPR = 1
+[2020-07-25 21:27:48.190] [I] Desktop: QRect(0, 0, 1920 x 1080)
+[2020-07-25 21:27:48.190] [I] Background size: QSize(1920, 1080)
+[2020-07-25 21:27:48.201] [I] Focus set
+[2020-07-25 21:27:48.202] [I] Snipper: preparation done (0)
+[2020-07-25 21:27:48.203] [I] Snipper: about to appear...
+[2020-07-25 21:27:48.203] [I] Snipper: prepare to show...
+[2020-07-25 21[2020-07-26 09:22:47.691] [I] ***************************************************************
+[2020-07-26 09:22:47.691] [I] Snipaste 2.2.1-Beta2 x64 (Desktop) (Qt 5.9.0)
+[2020-07-26 09:22:47.691] [I] OS: Windows 10 (10.0) [10.0.18363]
+[2020-07-26 09:22:47.691] [I] Cores: 12
+[2020-07-26 09:22:47.691] [I] Elevated: false
+[2020-07-26 09:22:47.691] [I] Main thread id: 0x38b4
+[2020-07-26 09:22:47.691] [I] Log level: 2
+[2020-07-26 09:22:47.691] [I] Application dir: D:/Myworkplace/前端基础/资料 -前端小白零基础入门HTML5+CSS3/04-前端基础CSS第二天/素材
+[2020-07-26 09:22:47.691] [I] Working dir: D:/Myworkplace/前端基础/资料 -前端小白零基础入门HTML5+CSS3/04-前端基础CSS第二天/素材
+[2020-07-26 09:22:47.691] [I] Config: D:/Myworkplace/前端基础/资料 -前端小白零基础入门HTML5+CSS3/04-前端基础CSS第二天/素材/config.ini
+[2020-07-26 09:22:47.692] [I] Library paths: (D:/Myworkplace/前端基础/资料 -前端小白零基础入门HTML5+CSS3/04-前端基础CSS第二天/素材)
+[2020-07-26 09:22:47.692] [I] Screen scale: 1.25
+[2020-07-26 09:22:47.692] [I] Retina factor: 1
+[2020-07-26 09:22:47.692] [I] Screens: 1
+[2020-07-26 09:22:47.692] [I]     QRect(0, 0, 1920 x 1080), DPI = 119 , DPR = 1
+[2020-07-26 09:22:47.692] [I] About to import settings from: D:/Myworkplace/前端基础/资料 -前端小白零基础入门HTML5+CSS3/04-前端基础CSS第二天/素材/config.ini
+[2020-07-26 09:22:47.700] [I] Settings imported
+[2020-07-26 09:22:47.701] [I] Breakpad initialized
+[2020-07-26 09:22:47.704] [I] Process priority: 1
+[2020-07-26 09:22:47.704] [I] Initializing Snipaste...
+[2020-07-26 09:22:48.276] [I] Prefetch...
+[2020-07-26 09:22:48.278] [I] About to apply settings...
+[2020-07-26 09:22:48.288] [I] Preloaded 20 files: 16 ms
+[2020-07-26 09:22:48.522] [I] Settings applied
+[2020-07-26 09:22:48.572] [I] Log level set to: 2
+[2020-07-26 09:22:48.645] [I] History dir: D:/Myworkplace/前端基础/资料 -前端小白零基础入门HTML5+CSS3/04-前端基础CSS第二天/素材/history
+[2020-07-26 09:22:48.648] [I] Header version: 169
+[2020-07-26 09:22:48.655] [I] About to restore pasters...
+[2020-07-26 09:22:48.658] [I] Group 0 [8X5TZQ]: "默认"
+[2020-07-26 09:22:48.658] [I] Record version: 169
+[2020-07-26 09:22:48.658] [I] To restore: 0
+[2020-07-26 09:22:48.658] [I] Pasters touched
+[2020-07-26 09:22:48.658] [I] All pasters activated: true
+[2020-07-26 09:22:49.124] [I] Unref images: 1 (1 removed)
+[2020-07-26 09:22:49.131] [I] Unref dirs: 0 (0 removed)
+[2020-07-26 09:22:49.150] [I] Empty history info files: 0 (0 removed)
+[2020-07-26 09:22:49.150] [I] Pasters restored
+[2020-07-26 09:22:49.150] [I] Launch time: 1476 ms
+[2020-07-26 09:22:49.222] [I] Load default ssl configuration: 954 ms
+[2020-07-26 09:22:55.789] [I] Second instance: 1
+[2020-07-26 09:22:59.919] [I] Parsing command arguments [1]: (sp, snip)
+[2020-07-26 09:22:59.920] [I] Snip request: 0 (dest: 0)
+[2020-07-26 09:22:59.920] [I] Snipper: preparing...
+[2020-07-26 09:22:59.975] [I] Screens: 1
+[2020-07-26 09:22:59.975] [I]     QRect(0, 0, 1920 x 1080), DPI = 119 , DPR = 1
+[2020-07-26 09:22:59.975] [I] Desktop: QRect(0, 0, 1920 x 1080)
+[2020-07-26 09:22:59.975] [I] Background size: QSize(1920, 1080)
+[2020-07-26 09:22:59.981] [I] Focus set
+[2020-07-26 09:22:59.987] [I] Snipper: preparation done (0)
+[2020-07-26 09:22:59.987] [I] Snipper: about to appear...
+[2020-07-26 09:22:59.987] [I] Snipper: prepare to show...
+[2020-07-26 09:23:00.013] [I] Snipper: shown
+[2020-07-26 09:23:00.014] [I] Snipper: focus in
+[2020-07-26 09:23:00.014] [I] Snipper: ready [0.108 s]
+[2020-07-26 09:23:01.828] [I] Snipper: focus out [3]
+[2020-07-26 09:23:03.309] [I] Snipper: focus in
+[2020-07-26 09:23:03.309] [I] Screenshot destination: none
+[2020-07-26 09:23:03.309] [I] Snipper: about to quit...
+[2020-07-26 09:23:03.313] [I] Snipper: focus out [3]
+[2020-07-26 09:23:03.315] [I] Snipper: hidden
+[2020-07-26 09:23:03.316] [I] Snipper: quit
+[2020-07-26 09:23:04.932] [I] Parsing command arguments [1]: (sp, snip)
+[2020-07-26 09:23:04.932] [I] Snip request: 0 (dest: 0)
+[2020-07-26 09:23:04.932] [I] Snipper: preparing...
+[2020-07-26 09:23:04.981] [I] Screens: 1
+[2020-07-26 09:23:04.981] [I]     QRect(0, 0, 1920 x 1080), DPI = 119 , DPR = 1
+[2020-07-26 09:23:04.981] [I] Desktop: QRect(0, 0, 1920 x 1080)
+[2020-07-26 09:23:04.981] [I] Background size: QSize(1920, 1080)
+[2020-07-26 09:23:04.988] [I] Focus set
+[2020-07-26 09:23:04.989] [I] Snipper: preparation done (0)
+[2020-07-26 09:23:04.989] [I] Snipper: about to appear...
+[2020-07-26 09:23:04.989] [I] Snipper: prepare to show...
+[2020-07-26 09:23:05.050] [I] Snipper: shown
+[2020-07-26 09:23:05.051] [I] Snipper: focus in
+[2020-07-26 09:23:05.052] [I] Snipper: ready [0.119 s]
+[2020-07-26 09:23:06.135] [I] Snipper: focus out [3]
+[2020-07-26 09:23:07.070] [I] Snipper: focus in
+[2020-07-26 09:23:07.070] [I] Screenshot destination: none
+[2020-07-26 09:23:07.070] [I] Snipper: about to quit...
+[2020-07-26 09:23:07.073] [I] Snipper: focus out [3]
+[2020-07-26 09:23:07.075] [I] Snipper: hidden
+[2020-07-26 09:23:07.076] [I] Snipper: quit
+[2020-07-26 09:23:50.849] [I] Silent feed checking finished
+[2020-07-26 09:23:50.849] [I] New version available: 2.4-Beta
+[2020-07-26 09:42:20.642] [I] Preloaded 20 files: 0 ms [every 19.5 m]
+[2020-07-26 10:06:45.647] [I] Preloaded 20 files: 9 ms [every 24.4 m]
+[2020-07-26 10:23:09.344] [I] Parsing command arguments [1]: (sp, snip)
+[2020-07-26 10:23:09.344] [I] Snip request: 0 (dest: 0)
+[2020-07-26 10:23:09.344] [I] Snipper: preparing...
+[2020-07-26 10:23:09.380] [I] Screens: 1
+[2020-07-26 10:23:09.380] [I]     QRect(0, 0, 1920 x 1080), DPI = 119 , DPR = 1
+[2020-07-26 10:23:09.380] [I] Desktop: QRect(0, 0, 1920 x 1080)
+[2020-07-26 10:23:09.380] [I] Background size: QSize(1920, 1080)
+[2020-07-26 10:23:09.389] [I] Focus set
+[2020-07-26 10:23:09.390] [I] Snipper: preparation done (0)
+[2020-07-26 10:23:09.390] [I] Snipper: about to appear...
+[2020-07-26 10:23:09.390] [I] Snipper: prepare to show...
+[2020-07-26 10:23:09.454] [I] Snipper: shown
+[2020-07-26 10:23:09.456] [I] Snipper: focus in
+[2020-07-26 10:23:09.456] [I] Snipper: ready [0.125 s]
+[2020-07-26 10:23:19.419] [I] Snipper: focus out [3]
+[2020-07-26 10:23:20.583] [I] Snipper: focus in
+[2020-07-26 10:23:20.583] [I] Screenshot destination: none
+[2020-07-26 10:23:20.583] [I] Snipper: about to quit...
+[2020-07-26 10:23:20.586] [I] Snipper: focus out [3]
+[2020-07-26 10:23:20.588] [I] Snipper: hidden
+[2020-07-26 10:23:20.589] [I] Snipper: quit
+[2020-07-26 10:23:25.864] [I] Parsing command arguments [1]: (sp, snip)
+[2020-07-26 10:23:25.865] [I] Snip request: 0 (dest: 0)
+[2020-07-26 10:23:25.865] [I] Snipper: preparing...
+[2020-07-26 10:23:25.917] [I] Screens: 1
+[2020-07-26 10:23:25.917] [I]     QRect(0, 0, 1920 x 1080), DPI = 119 , DPR = 1
+[2020-07-26 10:23:25.917] [I] Desktop: QRect(0, 0, 1920 x 1080)
+[2020-07-26 10:23:25.917] [I] Background size: QSize(1920, 1080)
+[2020-07-26 10:23:25.928] [I] Focus set
+[2020-07-26 10:23:25.929] [I] Snipper: preparation done (0)
+[2020-07-26 10:23:25.929] [I] Snipper: about to appear...
+[2020-07-26 10:23:25.929] [I] Snipper: prepare to show...
+[2020-07-26 10:23:25.983] [I] Snipper: shown
+[2020-07-26 10:23:25.985] [I] Snipper: focus in
+[2020-07-26 10:23:25.985] [I] Snipper: ready [0.125 s]
+[2020-07-26 10:23:29.238] [I] Snipper: focus out [3]
+[2020-07-26 10:23:31.022] [I] Snipper: focus in
+[2020-07-26 10:23:31.022] [I] Screenshot destination: none
+[2020-07-26 10:23:31.022] [I] Snipper: about to quit...
+[2020-07-26 10:23:31.025] [I] Snipper: focus out [3]
+[2020-07-26 10:23:31.027] [I] Snipper: hidden
+[2020-07-26 10:23:31.028] [I] Snipper: quit
+[2020-07-26 10:36:45.653] [I] Preloaded 20 files: 0 ms [every 30.0 m]
+[2020-07-26 10:54:04.254] [I] System suspended
+[2020-07-26 13:54:39.981] [I] Preloaded 20 files: 16 ms [every 30.0 m]
+[2020-07-26 14:45:06.510] [I] Preloaded 20 files: 7 ms [every 30.0 m]
+[2020-07-26 14:45:11.745] [I] System resumes
+[2020-07-26 14:45:11.752] [I] Preloaded 20 files: 7 ms
+[2020-07-26 15:15:06.532] [I] Preloaded 20 files: 2 ms [every 30.0 m]
+[2020-07-26 15:45:06.540] [I] Preloaded 20 files: 15 ms [every 30.0 m]
+[2020-07-26 15:46:38.319] [I] System suspended
+[2020-07-26 15:53:42.051] [I] System resumes
+[2020-07-26 15:53:42.059] [I] Preloaded 20 files: 8 ms
+[2020-07-26 16:06:10.966] [I] Parsing command arguments [1]: (sp, snip)
+[2020-07-26 16:06:10.967] [I] Snip request: 0 (dest: 0)
+[2020-07-26 16:06:10.967] [I] Snipper: preparing...
+[2020-07-26 16:06:11.030] [I] Screens: 1
+[2020-07-26 16:06:11.030] [I]     QRect(0, 0, 1920 x 1080), DPI = 119 , DPR = 1
+[2020-07-26 16:06:11.030] [I] Desktop: QRect(0, 0, 1920 x 1080)
+[2020-07-26 16:06:11.030] [I] Background size: QSize(1920, 1080)
+[2020-07-26 16:06:11.069] [I] Focus set
+[2020-07-26 16:06:11.070] [I] Snipper: preparation done (0)
+[2020-07-26 16:06:11.071] [I] Snipper: about to appear...
+[2020-07-26 16:06:11.072] [I] Snipper: prepare to show...
+[2020-07-26 16:06:11.077] [I] Snipper: shown
+[2020-07-26 16:06:11.078] [I] Snipper: focus in
+[2020-07-26 16:06:11.079] [I] Snipper: ready [0.115 s]
+[2020-07-26 16:06:18.170] [I] Parsing command arguments [1]: (sp, paste)
+[2020-07-26 16:06:18.170] [I] Screenshot destination: pin, 
+[2020-07-26 16:06:18.171] [I] Paste image: QPoint(706, 334)
+[2020-07-26 16:06:18.201] [I] Screenshot successfully saved: pin, 
+[2020-07-26 16:06:18.201] [I] Snipper: about to quit...
+[2020-07-26 16:06:18.223] [I] Snipper: focus out [3]
+[2020-07-26 16:06:18.224] [I] Snipper: hidden
+[2020-07-26 16:06:18.224] [I] Snipper: quit
+[2020-07-26 16:06:18.317] [I] Snipper: scene saved
+[2020-07-26 16:15:06.559] [I] Preloaded 20 files: 9 ms [every 30.0 m]
+[2020-07-26 16:26:52.517] [I] Parsing command arguments [1]: (sp, snip)
+[2020-07-26 16:26:52.518] [I] Snip request: 0 (dest: 0)
+[2020-07-26 16:26:52.518] [I] Snipper: preparing...
+[2020-07-26 16:26:52.577] [I] Screens: 1
+[2020-07-26 16:26:52.577] [I]     QRect(0, 0, 1920 x 1080), DPI = 119 , DPR = 1
+[2020-07-26 16:26:52.577] [I] Desktop: QRect(0, 0, 1920 x 1080)
+[2020-07-26 16:26:52.577] [I] Background size: QSize(1920, 1080)
+[2020-07-26 16:26:52.601] [I] Focus set
+[2020-07-26 16:26:52.602] [I] Snipper: preparation done (0)
+[2020-07-26 16:26:52.603] [I] Snipper: about to appear...
+[2020-07-26 16:26:52.603] [I] Snipper: prepare to show...
+[2020-07-26 16:26:52.608] [I] Snipper: shown
+[2020-07-26 16:26:52.609] [I] Snipper: focus in
+[2020-07-26 16:26:52.610] [I] Snipper: ready [0.091 s]
+[2020-07-26 16:27:00.482] [I] Parsing command arguments [1]: (sp, paste)
+[2020-07-26 16:27:00.483] [I] Screenshot destination: pin, 
+[2020-07-26 16:27:00.484] [I] Paste image: QPoint(683, 247)
+[2020-07-26 16:27:00.506] [I] Screenshot successfully saved: pin, 
+[2020-07-26 16:27:00.506] [I] Snipper: about to quit...
+[2020-07-26 16:27:00.543] [I] Snipper: focus out [3]
+[2020-07-26 16:27:00.545] [I] Snipper: hidden
+[2020-07-26 16:27:00.545] [I] Snipper: quit
+[2020-07-26 16:27:00.638] [I] Snipper: scene saved
+[2020-07-26 16:45:06.575] [I] Preloaded 20 files: 6 ms [every 30.0 m]
+[2020-07-26 16:47:31.374] [I] Parsing command arguments [1]: (sp, snip)
+[2020-07-26 16:47:31.374] [I] Snip request: 0 (dest: 0)
+[2020-07-26 16:47:31.374] [I] Snipper: preparing...
+[2020-07-26 16:47:31.420] [I] Screens: 1
+[2020-07-26 16:47:31.420] [I]     QRect(0, 0, 1920 x 1080), DPI = 119 , DPR = 1
+[2020-07-26 16:47:31.420] [I] Desktop: QRect(0, 0, 1920 x 1080)
+[2020-07-26 16:47:31.420] [I] Background size: QSize(1920, 1080)
+[2020-07-26 16:47:31.449] [I] Focus set
+[2020-07-26 16:47:31.449] [I] Snipper: preparation done (0)
+[2020-07-26 16:47:31.451] [I] Snipper: about to appear...
+[2020-07-26 16:47:31.451] [I] Snipper: prepare to show...
+[2020-07-26 16:47:31.453] [I] Snipper: shown
+[2020-07-26 16:47:31.454] [I] Snipper: focus in
+[2020-07-26 16:47:31.454] [I] Snipper: ready [0.082 s]
+[2020-07-26 16:47:36.509] [I] Parsing command arguments [1]: (sp, paste)
+[2020-07-26 16:47:36.510] [I] Screenshot destination: pin, 
+[2020-07-26 16:47:36.510] [I] Paste image: QPoint(695, 328)
+[2020-07-26 1

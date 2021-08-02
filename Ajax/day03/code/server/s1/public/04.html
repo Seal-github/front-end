@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn">点击发送请求</button>
+    <script>
+        function fn1(data){
+            console.log("客户端的fn1被调用了");
+            console.log(data);
+        }
+    </script>
+
+    <script>
+        let btn = document.querySelector('.btn');
+        btn.addEventListener('click',function(){
+            let script = document.createElement('script');
+            // 设置scr
+            script.src = "http://localhost:3001/better?callback=fn1";
+            // 将script标签追加到页面当中
+            document.body.appendChild(script);
+            // 当script标签加载完成就删除
+            script.onload = function(){
+                document.body.removeChild(script);
+            }
+        })
+    </script>
+</body>
+</html>

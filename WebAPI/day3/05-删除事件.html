@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        height: 100px;
+        width: 100px;
+        background-color: pink;
+    }
+</style>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</body>
+<script>
+    var divs = document.querySelectorAll('div');
+    // 传统方式
+    divs[0].onclick=function(){
+        alert("11");
+        divs[0].onclick = null;
+    }
+    // 新方法
+    divs[1].addEventListener('click',fn);
+    // 不能用匿名函数了
+    function fn(){
+        alert('22');
+        divs[1].removeEventListener('click',fn);
+    }
+</script>
+</html>

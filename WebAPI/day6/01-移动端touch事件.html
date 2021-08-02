@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+    }
+</style>
+<body>
+    <div></div>
+    <script>
+        var div = document.querySelector('div');
+        // touches正在触摸屏幕的所有手指的一个列表
+        // targetTouches正在触摸当前DOM元素上手指的一个列表
+        // changedTouches手指状态发生了改变的列表，从无到有，从有道无
+        div.addEventListener('touchstart',function(e){
+            div.style.backgroundColor = 'red';
+            console.log(e);
+            console.log(e.targetTouches[0]);
+        })
+        div.addEventListener('touchmove',function(){
+            console.log('touchmove');
+        })
+        div.addEventListener('touchend',function(e){
+            div.style.backgroundColor = 'pink';
+            console.log(e);
+        })
+    </script>
+</body>
+</html>

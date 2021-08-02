@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>组件插槽</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 写法1 -->
+        <alter>
+            <p slot="header">顶部信息</p>
+            <p>主要内容1</p>
+            <p>主要内容2</p>
+            <p slot="footer">底部信息</p>
+        </alter>
+        <!-- 写法2 -->
+        <alter>
+            <template slot="header">
+                <p>顶部信息1</p>
+                <p>顶部信息2</p>
+            </template>
+            <p>顶部信息1</p>
+            <p>顶部信息2</p>
+            <template slot="footer">
+                <p>底部信息1</p>
+                <p>底部信息2</p>
+            </template>
+        </alter>
+    </div>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script>
+
+        Vue.component('alter',{
+            template:`
+                <div>
+                    <header>
+                        <slot name='header'></slot>
+                    </header>
+                    <main>
+                        <slot></slot>
+                    </main>
+                    <footer>
+                        <slot name='footer'></slot>
+                    </footer>
+                </div>
+            `
+        });
+        
+        // 父组件
+        let vm =  new Vue({
+            el:'#app',
+            data:{
+            },
+            methods:{
+
+            }
+        })
+    </script>
+</body>
+</html>

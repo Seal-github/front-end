@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="lm">黎明</button>
+    <button id="gfc">郭富城</button><br>
+    <img src="images/lm.jpg" alt="" title="黎明">
+    <script>
+        var lm = document.querySelector('#lm');
+        var gfc = document.querySelector('#gfc');
+        var img = document.querySelector('img');
+        lm.onclick = function(){
+            img.src = "images/lm.jpg";
+            img.title = "黎明";
+        }
+        gfc.onclick = function(){
+            img.src = "images/gfc.jpg";
+            img.title = "郭富城";
+        }
+    </script>
+</body>
+</html>

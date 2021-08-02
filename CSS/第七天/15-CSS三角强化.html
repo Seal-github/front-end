@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 0;
+            height: 0;
+            border-color: transparent red transparent transparent;
+            border-style: solid;
+            border-width: 100px 45px 0 0;
+        }
+        .price {
+            width: 160px;
+            height: 24px;
+            border: 1px solid red;
+            margin: 100px auto;
+            line-height: 24px;
+            text-align: center;
+        }
+        .today {
+            position: relative;
+            float: left;
+            width: 80px;
+            height: 24px;
+            background-color: red;
+            color: #ffffff;
+            font-weight: 700;
+        }
+        .today i {
+            position: absolute;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-color: transparent #ffffff transparent transparent;
+            border-style: solid;
+            border-width: 24px 10px 0 0;
+        }
+        .past {
+            font-size: 12px;
+            font-weight: 700;
+            color: gray;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="price">
+        <span class="today">$100
+            <i></i>
+        </span>
+        <span class="past">$150</span>
+    </div>
+</body>
+</html>

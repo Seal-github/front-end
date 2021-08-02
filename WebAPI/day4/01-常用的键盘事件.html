@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // onkeyup
+        document.addEventListener('keyup',function(){
+            console.log('弹起');
+        })
+        // onkeydown
+        document.addEventListener('keydown',function(){
+            console.log('按下');
+        })
+        // onkeypress不能识别功能键
+        document.addEventListener('keypress',function(){
+            console.log('也是按下');
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes boom {
+            0% {
+                width: 20px;
+            }
+            100% {
+                width: 220px;
+            }
+        }
+        div {
+            font-size: 20px;
+            overflow: hidden;
+            width: 20px;
+            white-space: nowrap;
+            background-color:pink;
+            animation:boom 5s steps(10) infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        我要写十个20像素的字
+    </div>
+</body>
+</html>

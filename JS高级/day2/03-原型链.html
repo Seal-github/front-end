@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Star(name,age){
+            this.age = age;
+            this.name=name;
+        }
+        Star.prototype.sing =function(){
+            console.log("唱歌");
+        }
+        var ldh = new Star('刘德华',18);
+        console.log(Star.prototype);
+        // 原型对象的__proto__原型指向Object.prototype
+        console.log(Star.prototype.__proto__ === Object.prototype);
+        // Object.prototype的__proto__为空
+        console.log(Object.prototype.__proto__);
+    </script>
+</body>
+</html>

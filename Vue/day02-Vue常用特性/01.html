@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div>
+            <!-- .number转换为数字 -->
+            <input type="text" v-model.number='age'>
+            <!-- .trim去除字符串两侧的空格 -->
+            <input type="text" v-model.trim='info'>
+            <!-- .lazy把input事件改为change事件,change事件在失去焦点才触发 -->
+            <input type="text" v-model.lazy='msg'>
+            <div>{{msg}}</div>
+            <button v-on:click='fun'>点击</button>
+        </div>
+    </div>
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <script>
+        let vm = new Vue({
+            el:'#app',
+            data:{
+                age:'',
+                info:'',
+                msg:''
+            },
+            methods:{
+                fun:function(){
+                    // console.log(this.age+12);
+                    // console.log(this.info);
+                }
+            }
+        })
+    </script>
+</body>
+</html>

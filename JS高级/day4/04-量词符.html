@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // *重复零次或多次
+        var re = /^a*$/;
+        console.log(re.test(''));
+        console.log(re.test('a'));
+        console.log(re.test('aaaaaaa'));
+        console.log('.............');
+        // +重复一次或多次
+        var reg = /^a+$/;
+        console.log(reg.test(''));
+        console.log(reg.test('a'));
+        console.log(reg.test('aaaaaaa'));
+        console.log('..............');
+        // ?重复零次或一次
+        var rege = /^a?$/;
+        console.log(rege.test(''));
+        console.log(rege.test('a'));
+        console.log(rege.test('aaaaaaaaa'));
+        console.log('..............');
+        // {n}重复n次
+        var regex1 = /^a{5}$/;
+        console.log(regex1.test('aaaaa'));
+        console.log(regex1.test('aa'));
+        console.log('..............');
+        // {n,}重复n次及以上
+        var regex2 = /^a{3,}$/;
+        console.log(regex2.test('a'));
+        console.log(regex2.test('aaa'));
+        console.log(regex2.test('aaaaa'));
+        console.log('..............');
+        // {n,m}重复n到m次
+        var regex3 = /^a{3,6}$/;
+        console.log(regex3.test('a'));
+        console.log(regex3.test('aaa'));
+        console.log(regex3.test('aaaa'));
+        console.log(regex3.test('aaaaa'));
+        console.log(regex3.test('aaaaaaaa'));
+    </script>
+</body>
+</html>

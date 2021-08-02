@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 每一个组件相互的数据都是独立的 -->
+        <button-counter></button-counter>
+        <!-- 直接在 DOM (即非字符串的模板) 中使用时只有 kebab-case 是有效的 -->
+        <!-- <HelloWorld></HelloWorld> -->
+        <hello-world></hello-world>
+    </div>
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <script>
+        // 组件注册
+        Vue.component('HelloWorld',{
+            data:function(){
+                return {
+                    msg:"HelloWorld"
+                }
+            },
+            template:'<div>{{msg}}</div>'
+        })
+        // -------------------------------------------
+        Vue.component('button-counter',{
+            //data必须是一个函数
+            data:function(){
+                return {
+                    count:0
+                }
+            },
+            // 组件的模板应该确切的包含一个根元素
+            // 使用模板字符串
+            template:`
+            <div>
+                <button v-on:click="count++">点击了{{count}}次</button>
+                <button>测试</button>
+                <HelloWorld></HelloWorld>
+            </div>
+            `
+        })
+        let vm =  new Vue({
+            el:'#app',
+            data:{
+
+            }
+        })
+    </script>
+</body>
+</html>

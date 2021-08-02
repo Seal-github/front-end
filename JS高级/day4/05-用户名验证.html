@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .right {
+        color: green;
+    }
+    .bad {
+        color: red;
+    }
+</style>
+<body>
+    <input type="text" class="uname"><span class="message">请输入用户名</span>
+    <script>
+        var reg = /^[a-zA-Z0-9-_]{6,16}$/;
+        var uname = document.querySelector('.uname');
+        var span = document.querySelector('.message');
+        uname.addEventListener('blur',function(){
+            if(reg.test(this.value)){
+                console.log("true");
+                span.className = 'right';
+                span.innerHTML = "输入用户名正确";
+            }
+            else{
+                console.log("false");
+                span.className = 'bad';
+                span.innerHTML = "输入用户名错误";
+            }
+        })
+    </script>
+</body>
+</html>

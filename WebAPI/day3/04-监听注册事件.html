@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>传统方式</button>
+    <button>监听注册</button>
+    <script>
+        // 传统方式
+        // 传统事件会有唯一性，同一元素的同一事件后一个处理函数会覆盖前一个
+        var btns = document.querySelectorAll('button');
+        btns[0].onclick = function(){
+            alert("1");
+        }
+        btns[0].onclick = function(){
+            alert("11");
+        }
+        // 监听事件
+        // 
+        btns[1].addEventListener('click',function(){
+            alert('2');
+        })
+        btns[1].addEventListener('click',function(){
+            alert('22');
+        })
+    </script>
+</body>
+</html>

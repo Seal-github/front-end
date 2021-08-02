@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">发送请求</button>
+    <button id="btn2">发送请求</button>
+    <script>
+        let btn1 = document.querySelector('#btn1');
+        let btn2 = document.querySelector('#btn2');
+        btn1.onclick = function(){
+            // 调用jsonp函数
+            jsonp({
+                url:"http://localhost:3001/better",
+                data:{
+                    name:'zhenghong',
+                    age:23
+                },
+                success:function(data){
+                    console.log("success");
+                    console.log(data);
+
+                }
+            })
+        }
+        btn2.onclick = function(){
+            // 调用jsonp函数
+            jsonp({
+                url:"http://localhost:3001/better",
+                success:function(data){
+                    console.log("123");
+                    console.log(data);
+
+                }
+            })
+        }
+        // 封装jsonp函数
+        function jsonp(options){
+            // 传递其他参数
+            // 拼接字符串变量
+            let params = '';
+            for(let attr in options.data){
+                params+='&'+attr+'='+options.data[attr];
+            }
+            // 解决多个请求后会覆盖前的问题
+            // 随机每次发送请求的函数名，例如Jsonp01222
+            let fnName = 'Jsonp'+Math.random().toString().replace('.','');
+            // 它已经不是一个全局函数了，要把它变成一个全局函数,并添加名字
+            window[fnName] = options.success;
+            // 动态创建script标签
+            let script = document.createElement('script');
+            script.src = options.url+'?callback='+fnName+params;
+            // script标签追加到页面
+            document.body.appendChild(script);
+            // 当script标签加载完成就删除
+            script.onload = function(){
+                document.body.removeChild(script);
+            }
+
+
+        }
+    </script>
+</body>
+</html>

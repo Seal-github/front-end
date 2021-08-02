@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model='msg'>
+        <!-- 在双花括号中 -->
+        <div>{{msg | upper}}</div>
+        <div>{{msg | upper | lower}}</div>
+        <!-- 在 `v-bind` 中 -->
+        <div v-bind:id="msg | upper">测试数据</div>
+    </div>
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <script>
+        // 过滤器
+        // Vue.filter('upper',function(val){
+        //     // 将第一个字母大写并和后续字符串拼接
+        //     return val.charAt(0).toUpperCase()+val.slice(1);
+        // });
+        Vue.filter('lower',function(val){
+            // 将第一个字母小写并和后续字符串拼接
+            return val.charAt(0).toLowerCase()+val.slice(1);
+            
+        })
+        let vm = new Vue({
+            el:'#app',
+            data:{
+                msg:''
+            },
+            // 局部过滤器
+            filters:{
+                upper:function(val){
+                    return val.charAt(0).toUpperCase()+val.slice(1);
+                }
+            }
+
+        })
+    </script>
+</body>
+</html>

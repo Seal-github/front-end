@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 当上下相邻的两个块元素（兄弟关系）相遇时，如果上面的元素有下外边距 margin-bottom，
+        下面的元素有上外边距 margin-top ，则他们之间的垂直间距取两个值中的较大者 */
+        .one {
+            height: 300px;
+            width: 500px;
+            margin-bottom: 100px;
+            background-color: pink;
+        }
+        .two {
+            height: 300px;
+            width: 500px;
+            margin-top: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">阿大</div>
+    <div class="two">阿二</div>
+</body>
+</html>

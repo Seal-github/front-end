@@ -1,0 +1,9 @@
+{{mes}}
+<ul>
+    {{each users}}
+    <li>
+        {{$value.name}}
+        {{$value.age}}
+    </li>
+    {{/each}}
+</ul>

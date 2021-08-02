@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+        }
+        .top {
+            height: 60px;
+            background-color: gray;
+        }
+        .banner {
+            height: 120px;
+            width: 1000px;
+            background-color: gray;
+            margin: 10px auto;
+        }
+        .box {
+            height: 280px;
+            width: 1000px;
+            background-color: pink;
+            margin: 10px auto;
+        }
+        .box li {
+            height: 280px;
+            width: 230px;
+            background-color: gray;
+            float: left;
+            margin-right: 26px;
+        }
+        .box .last {
+            margin-right: 0;
+            float:right;
+        }
+        .footer {
+            height: 360px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">top</div>
+    <div class="banner">banner</div>
+    <div class="box">
+        <ul>
+            <li>$</li>
+            <li>$</li>
+            <li>$</li>
+            <li class="last">$</li>
+        </ul>
+    </div>
+    <div class="footer">footer</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+.sk {
+    position: absolute;
+    top: 40px;
+    left: 185px;
+    padding: 3px 15px;
+    border-left: 1px solid #b1191a;
+}
+.sk-list ul li {
+    float: left;
+}
+.sk-list ul li a {
+    display: block;
+    line-height: 45px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+}
+.sk-content ul li {
+    float: left;
+}
+.sk-content ul li a {
+    display: block;
+    line-height: 45px;
+    padding: 0 22px;
+    font-size: 14px;
+}
+.sk-content ul li:last-child a::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+}

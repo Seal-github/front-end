@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>获取当前的时间</button>
+    <div>某个时间</div>
+    <div id="time">122</div>
+    <script>
+        var btn = document.querySelector('button');
+        var div = document.querySelector('div');
+        var time = document.querySelector('#time');
+        btn.onclick = function(){
+            div.innerText=getDate();
+        }
+        btn.onclick = function(){
+            // 不识别html标签
+            // time.innerText = '<strong>今天</strong>是2021';
+            // 识别html标签
+            time.innerHTML = '<strong>今天</strong>是2021';
+        }
+
+        
+        function getDate(){
+            var date = new Date();
+            var year = date.getFullYear();
+            var month = date.getMonth()+1;
+            var dates = date.getDate();
+            return year+'-'+month+'-'+dates;    
+        }
+    </script>
+</body>
+</html>

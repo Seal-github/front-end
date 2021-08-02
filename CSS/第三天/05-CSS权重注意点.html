@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #father {
+            /* 父亲的权重是100 */
+            color: red;
+        }
+        p {
+            /* p继承的权重为0 */
+            /* p自身的权重为1 */
+            /* 所有以后看标签到底执行那个样式，先看这个标签有没有直接被选出来 */
+            color:blue;
+        }
+        body {
+            color: pink;
+        }
+        /* a链接样式不变为粉色地原因 */
+        /* a链接浏览器默认地给了一个样式 蓝色 有下划线 */
+    </style>
+</head>
+<body>
+    <div class="father">
+        <p>客户计划</p>
+    </div>
+    <a href="#">单独的样式</a>
+</body>
+</html>

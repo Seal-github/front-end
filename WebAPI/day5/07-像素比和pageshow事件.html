@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        (function flexible(window,document){
+            // 获取html的根元素
+            var docEl = document.documentElement;
+            // dpr物理像素比
+            var dpr = window.devicePixelRatio||1
+            function setBodyFontSize(){
+                if(document.body){
+                    document.body.style.fontSize = (12*dpr)+'px'
+                }
+                else{
+                    document.addEventListener('DOMContentLaoded',setBodyFontSize)
+                }
+            }
+            setBodyFontSize();
+
+        }(window.document));
+    </script>
+</body>
+</html>

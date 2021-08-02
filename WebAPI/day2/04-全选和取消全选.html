@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        margin: 100px auto;
+        border: 1px solid red;
+    }
+    table td,th {
+        border: 1px solid #ccc;
+    }
+</style>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th id="t_all"><input type="checkbox" name="" id="" checked="checked"></th>
+                <th>手机</th>
+                <th>价格</th>
+            </tr>
+        </thead>
+        <tbody id="t_one">
+            <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>mi10</td>
+                <td>3000</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>iphoneX</td>
+                <td>6522</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        var t_all = document.getElementById('t_all');
+        var checkboxs = document.getElementById('t_one').getElementsByTagName('input');
+        t_all.onclick = function(){
+            for(var i =0;i<checkboxs.length;i++)
+            {
+                console.log(this.checked);
+                checkboxs[i].checked =this.checked;
+            }
+        }
+    </script>
+</body>
+</html>

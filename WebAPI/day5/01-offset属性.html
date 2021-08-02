@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .father {
+        position: relative;
+        height: 200px;
+        width: 200px;
+        margin: 100px;
+        background-color: pink;
+    }
+    .son {
+        height: 100px;
+        width: 100px;
+        background-color: #ccc;
+        margin: 40px;
+    }
+    .w {
+        height: 300px;
+        /* width: 300px; */
+        padding: 40px;
+        border: 10px solid red;
+        background-color: green;
+    }
+</style>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <div class="w"></div>
+    <script>
+        var father = document.querySelector('.father');
+        var son = document.querySelector('.son');
+        // 1.offsetTop和offsetLeft
+        console.log("father "+father.offsetTop);
+        console.log("father "+father.offsetLeft);
+        // 以带定位的父亲为准，否则以body为准
+        console.log("son "+son.offsetLeft);
+        // 2.offsetWidth和offsetHeight
+        // 包含padding+border
+        var w = document.querySelector('.w');
+        console.log(w.offsetWidth);
+        console.log(w.offsetHeight);
+        // 3.返回带有定位的父亲，否则body
+        console.log(son.offsetParent);
+        console.log(son.parentNode);//返回最近的父亲
+    </script>
+</body>
+</html>

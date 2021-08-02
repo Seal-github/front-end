@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <style>
+        .container {
+            padding-top: 60px;
+        }
+        .padding {
+            padding: 5px 0 20px 0;
+        }
+        .progress-bar {
+            width: 0%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-group">
+            <label for="">请选择文件</label>
+            <input type="file" name="" id="file">
+            <!-- 动态预览图片 -->
+            <div class="padding" id="box">
+
+            </div>
+            <div class="progress">
+                <div class="progress-bar" id="bar">0%</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 获取文件选择控件
+        let file = document.querySelector('#file');
+        let bar = document.querySelector('#bar');
+        let box = document.querySelector('#box');
+        // 
+        file.onchange = function(){
+            // 创建formData表单对象
+            let formData = new FormData();
+            // 将用户选择的文件添加到formData表单对象
+            // attrName是给文件的名字
+            formData.append('attrName',this.files[0]);
+            // 创建ajax对象
+            let xhr = new XMLHttpRequest();
+            // 对ajax对象进行配置
+            xhr.open('post','http://localhost:3000/upload');
+            // 在上传过程中持续触发
+            xhr.upload.onprogress = function(ev){
+                // ev.loaded文件已经上传了多少
+                // ev.total文件总的大小
+                let result = (ev.loaded/ev.total)*100+'%';
+                bar.style.width = result;
+                bar.innerHTML = result;
+            }
+            // 发送ajax请求
+            xhr.send(formData);
+            // 监听服务器端响应的数据
+            xhr.onload = function(){
+                if(xhr.status == 200){
+                    let result = JSON.parse(xhr.responseText);
+                    // 动态创建img标签
+                    let img = document.createElement('img');
+                    // 给图片标签设置src属性
+                    img.src = result.path;
+                    // 图片加载完成后
+                    img.onload = function(){
+                        box.appendChild(img);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

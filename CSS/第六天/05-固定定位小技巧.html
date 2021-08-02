@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .w {
+            width: 1000px;
+            height: 600px;
+            background-color: blanchedalmond;
+            margin: 0 auto;
+        }
+        .box {
+            position: fixed;
+            /* 1. 让固定定位的盒子 left: 50%. 走到浏览器可视区（也可以看做版心） 的一半位置。 */
+            top: 10px;
+            left: 50%;
+            /* 2. 让固定定位的盒子 margin-left: 版心宽度的一半距离。 */
+            margin-left: 500px;
+            height: 200px;
+            width: 50px;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 版心 -->
+    <div class="w"></div>
+    <!-- 固定定位盒子 -->
+    <div class="box"></div>
+</body>
+</html>

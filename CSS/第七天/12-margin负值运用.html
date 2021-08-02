@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li {
+            position: relative;
+            list-style: none;
+            float: left;
+            width: 110px;
+            height: 200px;
+            border: 2px solid red;
+            margin-left: -1px;
+        }
+        ul li:hover {
+            /* 如果没有有定位，则加相对定位（保留位置） */
+            /* position: relative; */
+            /* 如果有定位，则加z-index */
+            z-index: 1;
+            border: 2px solid skyblue;
+
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>

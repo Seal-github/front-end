@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 创建普通的html表单 -->
+    <form action="" id="form">
+        <input type="text" name="username" id="">
+        <input type="password" name="password" id="">
+        <input type="button" name="" id="btn" value="提交">
+    </form>
+    <script>
+        let btn = document.querySelector('#btn');
+        let form = document.querySelector('#form');
+        btn.addEventListener('click',function(){
+            // 将普通的html表单转换为表单对象
+            let formdata = new FormData(form);
+
+            // 1.get('key')获取表单对象属性的值
+            console.log(formdata.get('username'));
+            // 2.set('key','value')设置表单对象属性值
+            formdata.set('username','zhangsan');
+            // 3.delete('key')删除表单对象属性值
+            formdata.delete('password');
+            // 4.append('key','value')追加表单对象属性值
+            formdata.append('sex','男');
+
+
+
+
+
+
+
+            // 创建ajax对象
+            let xhr = new XMLHttpRequest();
+            //FormData表单必须是post下的
+            xhr.open('post','http://localhost:3000/formData');
+            // 发送ajax请求
+            xhr.send(formdata);
+            // 监听onload事件
+            xhr.addEventListener('load',function(){
+                if(xhr.status == 200){
+                    console.log(xhr.responseText);
+                }
+            })
+        })
+    </script>
+</body>
+</html>

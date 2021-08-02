@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="nav">
+        <li>苹果</li>
+        <li>梨</li>
+        <li>香蕉</li>
+        <li>西瓜</li>
+    </ul>
+    <script>
+        var lis = document.querySelectorAll('li');
+        // for(var i=0;i<lis.length;i++){
+        //     // function()是异步任务，会最后执行，就会导致全部输出4
+        //     // 1.动态添加属性
+        //     lis[i].index = i;
+        //     lis[i].addEventListener('click',function(){
+        //         console.log(this.index);
+        //     })
+        // }
+        // 2.利用闭包
+        for(var i =0;i<lis.length;i++){
+            (function(i){
+                lis[i].addEventListener('click',function(){
+                    console.log(i);
+                })
+            })(i)
+        }
+    </script>
+</body>
+</html>

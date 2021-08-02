@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">发送Ajax请求</button>
+    <script>
+        let btn = document.querySelector('#btn');
+        btn.addEventListener('click',function(){
+            // 1.创建ajax对象
+            let xhr = new XMLHttpRequest();
+            // 2.告诉Ajax对象要向那里发送请求，以什么方式
+            xhr.open('get','http://localhost:3000/error');
+            // 3.发送请求
+            xhr.send();
+            // 4.获取服务器端响应的数据
+            // 响应是没有确定时间的，所以要用onload事件
+            xhr.onload = function(){
+                console.log(xhr.responseText);
+                if(xhr.status==400){
+                    alert("错误");
+                }
+            }
+            // 网络中断会触发onerror
+            xhr.onerror = function(){
+                alert("无法连接网络");
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        height: 40px;
+        width: 500px;
+        margin: 50px auto;
+    }
+    .ps {
+        height: 25px;
+        width: 300px;
+    }
+    .message {
+        color: #ccc;
+        font-size: small;
+        display: inline-block;
+    }
+    .wrong {
+        color: red;
+    }
+</style>
+<body>
+    <div class="box">
+        <input type="password" class="ps">
+        <p class="message">请输入6~10位密码</p>
+    </div>
+    <script>
+        var ps = document.querySelector('.ps');
+        var mes = document.querySelector('.message');
+        ps.onblur = function(){
+            if(ps.value.length < 6 || ps.value.length>10)
+            {
+                mes.className = 'message wrong';
+                mes.innerHTML = "您输入的密码位数不对";
+            }
+        }
+    </script>
+</body>
+</html>

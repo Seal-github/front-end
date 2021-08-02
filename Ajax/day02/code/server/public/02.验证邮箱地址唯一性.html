@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./assets/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+<style>
+    p:not(:empty){
+        padding: 15px;
+    }
+    .container {
+        padding-top: 100px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="form-group">
+            <label>邮箱地址</label>
+            <input id="email" type="email" class="form-control" placeholder="请输入邮箱地址">
+        </div>
+        <!-- 类名 错误bg-danger 正确bg-success -->
+        <P id="info"></P>
+    </div>
+    <script src="./js/ajax.js"></script>
+    <script>
+        // 获取文本框元素
+        let email = document.querySelector('#email');
+        let info = document.querySelector('#info');
+        // 离开焦点事件
+        email.addEventListener('blur',function(){
+            // 获取邮箱地址
+            let emailaddress = this.value; 
+            // 邮箱地址的正则表达式
+            let reg = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/
+            if(!reg.test(emailaddress)){
+                // 提示信息
+                info.innerHTML = "邮箱格式不正确";
+                // 提示信息的样式
+                info.className = 'bg-danger';
+                // 阻止程序
+                return;
+            }
+            // 向服务器端发送请求
+            ajax({
+                type:'get',
+                url:'http://localhost:3000/verifyemailaddress',
+                data:{
+                    email:emailaddress
+                },
+                success:function(result){
+                    console.log(result);
+                    info.innerHTML = result.message;
+                    info.className = 'bg-success';
+                },
+                error:function(result){
+                    console.log(result);
+                    info.innerHTML = result.message;
+                    info.className = 'bg-danger';
+                }
+            });
+        })
+    </script>
+</body>
+</html>

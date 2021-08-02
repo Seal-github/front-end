@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .round {
+            height: 200px;
+            width: 200px;
+            background-color: #cccccc;
+            /* 如果是正方形，想要设置为一个圆，把数值修改为高度或者宽度的一半即可，
+            或者直接写为 50% */
+            /* border-radius: 100px; */
+            border-radius: 50%;
+        }
+        .Rrectangle {
+            height: 200px;
+            width: 500px;
+            background-color: #666666;
+            /* 如果是矩形，想要设置为一个圆角矩形，把数值修改为高度一半即可 */
+            border-radius: 100px;
+        }
+        .radius {
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+            /* border-top-left-radius: 10px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 40px; */
+            /* 1.顺时针 */
+            /* border-radius: 10px 20px 30px 40px; */
+            /* 2.两个值是对角线 ,第一个值是正对角线即左上和右下，第二个值是反对角线*/
+            /* border-radius: 10px 40px; */
+            /* 3.三个值，第一三个值是正对角线，第二个值是反对角线即右上左下 */
+            border-radius: 10px 20px 60px;
+        }
+    </style>
+</head>
+<body>
+    圆形
+    <div class="round"></div>
+    圆角矩形
+    <div class="Rrectangle"></div>
+    分别设置
+    <div class="radius"></div>
+</body>
+</html>

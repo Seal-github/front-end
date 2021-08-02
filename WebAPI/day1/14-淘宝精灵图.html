@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            list-style-type: none;
+        }
+        
+        .box {
+            width: 292px;
+            margin: 100px auto;
+        }
+        
+        .box li {
+            float: left;
+            width: 71px;
+            height: 75px;
+            background-color: #fff;
+            border: 1px solid #f4f4f4;
+            margin: -1px 0 0 -1px;
+        }
+        
+        .box li span {
+            display: block;
+            margin: 11px auto 10px;
+            width: 24px;
+            height: 24px;
+            background: url(sprite.png) no-repeat 0 0;
+        }
+        
+        .box li strong {
+            display: block;
+            font-size: 12px;
+            text-align: center;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <ul>
+            <li><span></span><strong>充话费</strong></li>
+            <li><span></span><strong>充话费</strong></li>
+            <li><span></span><strong>充话费</strong></li>
+            <li><span></span><strong>充话费</strong></li>
+            <li><span></span><strong>充话费</strong></li>
+            <li><span></span><strong>充话费</strong></li>
+            <li><span></span><strong>充话费</strong></li>
+            <li><span></span><strong>充话费</strong></li>
+            <li><span></span><strong>充话费</strong></li>
+            <li><span></span><strong>充话费</strong></li>
+            <li><span></span><strong>充话费</strong></li>
+            <li><span></span><strong>充话费</strong></li>
+        </ul>
+    </div>
+    <script>
+        var list = document.querySelectorAll('span');
+        for (var i = 0; i < list.length; i++) {
+            var index = i * 44;
+            list[i].style.backgroundPosition = '0 -' + index + 'px';
+        }
+    </script>
+
+</body>
+
+</html>

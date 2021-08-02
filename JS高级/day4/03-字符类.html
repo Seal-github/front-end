@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var re = /[abc]/;
+        // 只要包含a,b,c中的一个就符合
+        console.log(re.test('a'));
+        console.log(re.test('color'));
+        console.log(re.test('abcdef'));
+        console.log('....................');
+        // /^[abc]$/表示只有a,b,c才为true
+        var reg = /^[abc]$/;
+        console.log(reg.test('ab')); 
+        console.log(reg.test('b'));
+        console.log('......................');
+        // [-]
+        var rege = /^[a-z]$/;
+        console.log(rege.test('a'));
+        console.log(rege.test('z'));
+        console.log(rege.test('A'));
+        console.log('......................');
+        // 字符组合
+        var regex = /^[a-zA-Z0-9]$/;
+        console.log(regex.test('a'));
+        console.log(regex.test('S'));
+        console.log(regex.test('1'));
+        console.log('......................');
+        // []里的^表示取反，不能包括
+        var regexp = /^[^a-zA-Z0-9]$/;
+        console.log(regexp.test('!'));
+        console.log(regexp.test('A'));
+    </script>
+</body>
+</html>

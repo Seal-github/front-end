@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.创建ajax对象
+        let xhr = new XMLHttpRequest();
+        // 2.告诉Ajax对象要向那里发送请求，以什么方式
+        xhr.open('get','http://localhost:3000/responseData');
+        // 3.发送请求
+        xhr.send();
+        // 4.获取服务器端响应的数据
+        // 响应是没有确定时间的，所以要用onload事件
+        xhr.onload = function(){
+            // 5.服务端返回JSON数据怎么处理
+            // JSON.parse()将JSON字符串转换为JSON对象
+            let responseText = JSON.parse(xhr.responseText)
+            console.log(responseText);
+
+            let str = '<h2>'+responseText.name+'<\h2>';
+            document.body.innerHTML = str;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <form action="">
+            <div>
+                A：
+                <!-- 按键修饰符删除 -->
+                <input type="text"  v-model='A'>
+            </div>
+            <div>
+                B：
+                <!-- 按键修饰符回车 -->
+                <input type="text"  v-model='B'>
+            </div>
+            <div>
+                <input type="button" v-on:click='compute' value="计算">
+            </div>
+            <div>
+                <div>计算器结果</div>
+                <div v-text ='result'></div>
+            </div>
+        </form>
+    </div>
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <script>
+        // 自定义按键修饰符a 用ASCLL码
+        Vue.config.keyCodes.a = 65;
+        let vm = new Vue({
+            el:'#app',
+            data:{
+                msg:'Hello Vue',
+                A:'',
+                B:'',
+                result:''
+            },
+            methods:{
+                // 实现计算
+                compute:function(){
+                    this.result=parseInt(this.A)+parseInt(this.B);
+                },
+            }
+        })
+    </script>
+</body>
+</html>

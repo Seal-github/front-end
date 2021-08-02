@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>今天我来学webapi1</li>
+        <li>今天我来学webapi2</li>
+        <li>今天我来学webapi3</li>
+        <li>今天我来学webapi4</li>
+        <li>今天我来学webapi5</li>
+    </ul>
+    <ul id="nav">
+        <li>webapi1</li>
+        <li>webapi2</li>
+        <li>webapi3</li>
+        <li>webapi4</li>
+        <li>webapi5</li>
+    </ul>
+    <script>
+        // 返回带有指定标签名的对象的集合，以伪数组存储
+        var lis = document.getElementsByTagName('li');
+        console.log(lis);
+        for(var i = 0;i<lis.length;i++)
+        {
+            console.log(lis[i]);
+        }
+
+        // Element.getElementsByTagName()
+        var nav = document.getElementById('nav');
+        nav_lis = nav.getElementsByTagName('li');
+        for(var i = 0;i<nav_lis.length;i++)
+        {
+            console.log(nav_lis[i]);
+        }
+    </script>
+</body>
+</html>

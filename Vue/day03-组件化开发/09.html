@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用事件来抛出一个值</title>
+</head>
+
+<body>
+    <div id="app">
+        <div>父组件</div>
+        <button v-on:click = 'fun'>销毁事件</button>
+        <tom></tom>
+        <jerry></jerry>
+    </div>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script>
+        // 兄弟组件之间数据传递
+        //提供事件中心
+        var hub = new Vue();
+        // Tom
+        Vue.component('tom',{
+            data:function(){
+                return{
+                    num:0
+                }
+            },
+            template:`
+                <div>
+                    <div>Tom:{{num}}</div>
+                    <div>
+                        <button @click='fun1'>点击</button>
+                    </div>
+                </div>
+            `,
+            methods:{
+                fun1:function(){
+                    // 触发兄弟组件的事件
+                    hub.$emit('jerry-event',1);
+                }
+            },
+            mounted:function(){
+                // 监听事件
+                hub.$on('tom-event',(val)=>{
+                    this.num+=val;
+                });
+            }
+        });
+        // Jerry
+        Vue.component('jerry',{
+            data:function(){
+                return{
+                    num:0
+                }
+            },
+            template:`
+                <div>
+                    <div>Jerry:{{num}}</div>
+                    <div>
+                        <button @click='fun1'>点击</button>
+                    </div>
+                </div>
+            `,
+            methods:{
+                fun1:function(){
+                    // 触发兄弟组件的事件
+                    hub.$emit('tom-event',1);
+                }
+            },
+            mounted:function(){
+                // 监听事件
+                hub.$on('jerry-event',(val)=>{
+                    this.num+=val;
+                });
+            }
+        });
+
+        // 父组件
+        let vm =  new Vue({
+            el:'#app',
+            data:{
+            },
+            methods:{
+                fun:function(){
+                    // 销毁事件
+                    hub.$off('tom-event');
+                    hub.$off('jerry-event');
+                }
+            }
+        })
+    </script>
+</body>
+</html>

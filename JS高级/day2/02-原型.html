@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Star(name,age){
+            this.age = age;
+            this.name=name;
+            // this.sing = function Sing(){
+            //     console.log(this.name+"唱歌");
+            // }
+
+        }
+        // 可以把那些不变的方法直接定义在prototype对象上，这样所有对象的实例就可以共享这些方法
+        // Star.prototype.sing = function Sing(){
+        //         console.log(this.name+"唱歌");
+        //     }
+        // 此时必须手动添加constructor
+        Star.prototype ={
+            constructor :Star,
+            sing:function(){
+                console.log(this.name+'唱歌');
+            },
+            movice:function(){
+                console.log(this.name+'演戏');
+            }
+        }
+        var ldh = new Star("刘德华",'18');
+        var zxy = new Star('张学友','18');
+        console.log(ldh);
+        console.log(zxy);
+        // 对象都有一个属性__proto__指向构造函数的prototype原型对象
+        ldh.sing();
+        zxy.sing();
+        console.log(ldh.sing() == zxy.sing());
+        // prototype对象和__proto__都有constructor属性
+        console.log(Star.prototype);
+        console.log(ldh.__proto__);
+        console.log(Star.prototype.constructor);
+        console.log(ldh.__proto__.constructor);
+    </script>
+</body>
+</html>

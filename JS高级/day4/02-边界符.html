@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 正则表达式不需要加引号，不管是数字型还是字符串
+        var rg = /abc/;
+        // 只要有连续的abc就行true
+        console.log(rg.test('abcdd'));
+        console.log(rg.test('bdabc'));
+        console.log(rg.test('acbdd'));
+        console.log('.......................');
+        // 必须以连续abc开头才true
+        var reg = /^abc/;
+        console.log(reg.test('abcdd'));
+        console.log(reg.test('bdabc'));
+        console.log(reg.test('acbdd'));
+        console.log('.......................');
+        // 必须以连续abc开头并以同一个abc结尾才true
+        var rgex = /^abc$/;
+        console.log(rgex.test('abc'));
+        console.log(rgex.test('abcabc'));
+        console.log(rgex.test('aabc'));
+    </script>
+</body>
+</html>
